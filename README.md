@@ -1,9 +1,9 @@
 # Dynamic Window 🍔
 
-An interactive Rust application that simulates a smart fast-food drive-thru system. 
+A small Rust project simulating a drive-thru queue. Built mostly to get hands-on with
+how Rust handles memory — stack vs heap, ownership, and why you don't need a GC.
 
-## What I Learned & Demonstrated:
-- **Memory Allocation:** Storing fixed data (`order_id`) on the Stack vs. dynamic data (`customer_name`) on the Heap.
-- **Mutability:** Using the `mut` keyword and compound assignment operators (`+=`).
-- **Control Flow:** Implementing deterministic `for` loops with explicit numerical ranges (`1..4`).
-- **Resource Management:** Demonstrating Rust's compile-time `Ownership` rules for automated heap cleanup without a Garbage Collector.
+## What I was playing with:
+- `String` vs fixed types — why the customer queue lives on the heap
+- `mut` and how ownership + borrowing interact with mutability
+- How Rust cleans up heap memory at end of scope without a garbage collector
